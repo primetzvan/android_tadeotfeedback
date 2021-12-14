@@ -41,8 +41,10 @@
           android:layout_width="@dimen/default_size"
           android:layout_height="@dimen/default_size"
           android:contentDescription="@string/asw_button1"
+          android:onClick="rateButtonClicked"
           android:padding="0dp"
           android:scaleType="fitCenter"
+          android:tag="1"
           app:srcCompat="@drawable/icon2" />
 
         <ImageButton

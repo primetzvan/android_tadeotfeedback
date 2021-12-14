@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import at.htl.tadeotfeedback.databinding.FragmentQuestionBinding
@@ -33,38 +34,10 @@ class QuestionFragment : Fragment() {
         .findNavController()
         .navigate(R.id.action_questionFragment_to_noAnswerFragment)
     }
-    binding.btnLightGreen.setOnClickListener { view ->
-      view
-        .findNavController()
-        .navigate(R.id.action_questionFragment_to_summaryFragment)
-    }
-    binding.btnGreen.setOnClickListener { view ->
-      view
-        .findNavController()
-        .navigate(R.id.action_questionFragment_to_summaryFragment)
-    }
-    binding.btnYellow.setOnClickListener { view ->
-      view
-        .findNavController()
-        .navigate(R.id.action_questionFragment_to_summaryFragment)
-    }
-    binding.btnLightOrange.setOnClickListener { view ->
-      view
-        .findNavController()
-        .navigate(R.id.action_questionFragment_to_summaryFragment)
-    }
-    binding.btnOrange.setOnClickListener { view ->
-      view
-        .findNavController()
-        .navigate(R.id.action_questionFragment_to_summaryFragment)
-    }
-    binding.btnRed.setOnClickListener { view ->
-      view
-        .findNavController()
-        .navigate(R.id.action_questionFragment_to_summaryFragment)
-    }
     // Inflate the layout for this fragment
     return binding.root
   }
+
+
 
 }
