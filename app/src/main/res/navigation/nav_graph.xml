@@ -47,4 +47,9 @@
       android:id="@+id/action_noAnswerFragment_to_questionFragment"
       app:destination="@id/questionFragment" />
   </fragment>
+  <fragment
+    android:id="@+id/aboutFragment"
+    android:name="at.htl.tadeotfeedback.AboutFragment"
+    android:label="fragment_about"
+    tools:layout="@layout/fragment_about" />
 </navigation>

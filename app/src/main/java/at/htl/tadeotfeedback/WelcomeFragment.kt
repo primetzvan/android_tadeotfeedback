@@ -1,12 +1,12 @@
 package at.htl.tadeotfeedback
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.NavigationUI
 import at.htl.tadeotfeedback.databinding.FragmentWelcomeBinding
 import kotlinx.android.synthetic.main.fragment_welcome.*
 
@@ -34,6 +34,19 @@ class WelcomeFragment : Fragment() {
         .navigate(R.id.action_welcomeFragment_to_questionFragment)
     }
     // Inflate the layout for this fragment
+
+    setHasOptionsMenu(true)
     return binding.root
   }
+
+  override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+    super.onCreateOptionsMenu(menu, inflater)
+    inflater.inflate(R.menu.menu_main, menu)
+  }
+
+  override fun onOptionsItemSelected(item: MenuItem): Boolean {
+    return NavigationUI.onNavDestinationSelected(item, findNavController())
+  }
+
+
 }
