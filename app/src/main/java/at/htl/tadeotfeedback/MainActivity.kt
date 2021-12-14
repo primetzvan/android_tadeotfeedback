@@ -23,6 +23,9 @@ class MainActivity : AppCompatActivity() {
   public fun rateButtonClicked(view: View){
     val rating = Integer.parseInt(view.tag.toString())
     Toast.makeText(this, "Rating: $rating", Toast.LENGTH_LONG).show()
+
+    view.findNavController()
+      .navigate(QuestionFragmentDirections.actionQuestionFragmentToSummaryFragment(rating))
   }
 
 }

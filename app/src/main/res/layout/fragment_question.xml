@@ -42,9 +42,9 @@
           android:layout_height="@dimen/default_size"
           android:contentDescription="@string/asw_button1"
           android:onClick="rateButtonClicked"
+          android:tag="1"
           android:padding="0dp"
           android:scaleType="fitCenter"
-          android:tag="1"
           app:srcCompat="@drawable/icon2" />
 
         <ImageButton
@@ -54,7 +54,10 @@
           android:contentDescription="@string/asw_button2"
           android:padding="0dp"
           android:scaleType="fitCenter"
-          app:srcCompat="@drawable/icon1" />
+          app:srcCompat="@drawable/icon1"
+          android:onClick="rateButtonClicked"
+          android:tag="2"
+          />
 
         <ImageButton
           android:id="@+id/btn_yellow"
@@ -63,7 +66,9 @@
           android:contentDescription="@string/asw_button3"
           android:padding="0dp"
           android:scaleType="fitCenter"
-          app:srcCompat="@drawable/icon3" />
+          app:srcCompat="@drawable/icon3"
+          android:onClick="rateButtonClicked"
+          android:tag="3"/>
 
         <ImageButton
           android:id="@+id/btn_light_orange"
@@ -72,7 +77,9 @@
           android:contentDescription="@string/asw_button4"
           android:padding="0dp"
           android:scaleType="fitCenter"
-          app:srcCompat="@drawable/icon4" />
+          app:srcCompat="@drawable/icon4"
+          android:onClick="rateButtonClicked"
+          android:tag="4"/>
 
         <ImageButton
           android:id="@+id/btn_orange"
@@ -81,7 +88,9 @@
           android:contentDescription="@string/asw_button5"
           android:padding="0dp"
           android:scaleType="fitCenter"
-          app:srcCompat="@drawable/icon5" />
+          app:srcCompat="@drawable/icon5"
+          android:onClick="rateButtonClicked"
+          android:tag="5"/>
 
         <ImageButton
           android:id="@+id/btn_red"
@@ -90,7 +99,9 @@
           android:contentDescription="@string/asw_button6"
           android:padding="0dp"
           android:scaleType="fitCenter"
-          app:srcCompat="@drawable/icon6" />
+          app:srcCompat="@drawable/icon6"
+          android:onClick="rateButtonClicked"
+          android:tag="6"/>
 
       </TableRow>
 
