@@ -1,11 +1,16 @@
 plugins {
   id 'com.android.application'
   id 'kotlin-android'
+  id 'kotlin-android-extensions'
   id 'kotlin-kapt'
 }
 
 android {
   compileSdk 31
+
+  buildFeatures {
+    dataBinding true
+  }
 
   defaultConfig {
     applicationId "at.htl.tadeotfeedback"
@@ -34,6 +39,7 @@ android {
 
 dependencies {
 
+  implementation 'androidx.legacy:legacy-support-v4:1.0.0'
   def nav_version = '2.3.5'
 
   //Kotlin
