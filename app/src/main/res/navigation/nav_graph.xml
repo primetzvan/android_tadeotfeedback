@@ -12,7 +12,8 @@
     tools:layout="@layout/fragment_welcome" >
     <action
       android:id="@+id/action_welcomeFragment_to_questionFragment"
-      app:destination="@id/questionFragment" />
+      app:destination="@id/questionFragment"
+      app:enterAnim="@android:anim/slide_in_left" />
   </fragment>
   <fragment
     android:id="@+id/questionFragment"
@@ -56,4 +57,9 @@
     android:name="at.htl.tadeotfeedback.AboutFragment"
     android:label="fragment_about"
     tools:layout="@layout/fragment_about" />
+  <fragment
+    android:id="@+id/helpFragment"
+    android:name="at.htl.tadeotfeedback.HelpFragment"
+    android:label="fragment_help"
+    tools:layout="@layout/fragment_help" />
 </navigation>
